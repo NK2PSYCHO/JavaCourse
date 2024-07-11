@@ -1,13 +1,14 @@
 # LoopingStatements
 
-This folder contains a Java program that demonstrates the usage of different looping constructs in Java, specifically `for`, `while`, and `do-while` loops. The program generates and prints the Fibonacci series using these loops.
+This folder contains a Java program that demonstrates the usage of different looping constructs in Java, specifically `for`, `while`, `do-while`, and enhanced `for` loops. The program generates and prints the Fibonacci series using these loops and also showcases an example of an enhanced `for` loop.
 
 ## Overview
 
 The `LoopingStatements` class includes a `main` method that performs the following actions:
-1. Generates and prints the Fibonacci series using a `for` loop.
-2. Resets the loop counter and generates the Fibonacci series using a `while` loop.
-3. Demonstrates a `do-while` loop that executes a specific block of code exactly once, regardless of the loop condition.
+1. Demonstrates an enhanced `for` loop to iterate through an array.
+2. Generates and prints the Fibonacci series using a `for` loop.
+3. Resets the loop counter and generates the Fibonacci series using a `while` loop.
+4. Demonstrates a `do-while` loop that executes a specific block of code exactly once, regardless of the loop condition.
 
 ## Code Explanation
 
@@ -38,9 +39,18 @@ The `main` method performs the following tasks:
    int n = 15; // Define the number of terms in the Fibonacci series
    int i = 2; // Initialize the loop counter
    int firstTerm = 0, secondTerm = 1; // Initialize the first two terms of the series
+   int[] numbers = {1, 2, 3, 4, 5}; // Example array for enhanced for loop
    ```
 
-2. **For loop:**
+2. **Enhanced for loop:**
+   ```java
+   System.out.println("Example of enhanced for loop");
+   for (int num : numbers) {
+       System.out.println(num); // Prints each number in the array
+   }
+   ```
+
+3. **For loop:**
    ```java
    System.out.println("Fibonacci Series using for loop:");
    System.out.print(firstTerm + ", " + secondTerm);
@@ -54,7 +64,7 @@ The `main` method performs the following tasks:
    }
    ```
 
-3. **While loop:**
+4. **While loop:**
    ```java
    System.out.println("\nFibonacci Series using while loop:");
    i = 2; // Reset the loop counter
@@ -73,7 +83,7 @@ The `main` method performs the following tasks:
    }
    ```
 
-4. **Do-while loop:**
+5. **Do-while loop:**
    ```java
    // Execute this code block exactly once as the while loop condition is false
    do {
@@ -107,6 +117,12 @@ To run the `LoopingStatements` program:
 
 You should see the following output:
 ```
+Example of enhanced for loop
+1
+2
+3
+4
+5
 Fibonacci Series using for loop:
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377
 
@@ -118,4 +134,4 @@ This code block is executed exactly once as the while loop is false
 
 ## Conclusion
 
-This program provides a comprehensive overview of how different looping constructs in Java (`for`, `while`, and `do-while` loops) can be used to generate and print the Fibonacci series. It serves as a foundational reference for understanding how loops work in Java.
+This program provides a comprehensive overview of how different looping constructs in Java (`for`, `while`, `do-while` loops, and enhanced `for` loop) can be used to generate and print the Fibonacci series and iterate through an array. It serves as a foundational reference for understanding how loops work in Java.
