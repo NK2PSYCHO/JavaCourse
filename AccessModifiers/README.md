@@ -48,7 +48,7 @@ The `Main` class demonstrates how to create instances of classes from different 
 The `Main` class in the `packaging` package creates instances of `ClassA`, `ClassB`, `ClassC`, and `ClassD` and attempts to access their methods.
 
 ```java
-package packaging;
+package accessmodifiers;
 
 import package1.ClassA;
 import package1.ClassB;
