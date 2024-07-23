@@ -1,7 +1,7 @@
-package enumeration;
+package javaenum;
 
 // Enum Weekdays with days of the week
-public class Enumeration {
+public class JavaEnum {
 
     // Creating an enum called Weekdays
     public enum Weekdays {

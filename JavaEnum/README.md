@@ -1,4 +1,4 @@
-# Enumeration Java Project
+# Enum Java Project
 
 ## Overview
 
@@ -8,16 +8,16 @@ This project demonstrates the usage of enums in Java. Enums (short for enumerati
 
 ### Package Declaration
 
-The code begins with a package declaration, indicating that it belongs to the `enumeration` package:
+The code begins with a package declaration, indicating that it belongs to the `javaenum` package:
 ```java
-package enumeration;
+package javaenum;
 ```
 
 ### Enum Definition
 
-The `Weekdays` enum is defined inside the `Enumeration` class. Each enum constant represents a day of the week and can have an associated temperature:
+The `Weekdays` enum is defined inside the `JavaEnum` class. Each enum constant represents a day of the week and can have an associated temperature:
 ```java
-public class Enumeration {
+public class JavaEnum {
 
     public enum Weekdays {
         MONDAY(30),
@@ -91,16 +91,16 @@ public class Enumeration {
 
 ## Running the Program
 
-To run the `Enumeration` program:
+To run the `JavaEnum` program:
 
 1. Ensure you have a Java Development Kit (JDK) installed on your machine.
 2. Compile the Java file:
    ```sh
-   javac Enumeration.java
+   javac JavaEnum.java
    ```
 3. Run the compiled class:
    ```sh
-   java enumeration.Enumeration
+   java javaenum.JavaEnum
    ```
 
 You should see the following output:
